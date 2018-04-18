@@ -1,2 +1,2 @@
 # Stock_in_Hadoop
-MY HADOOP PROOJECT
+MY HADOOP PROJECT
