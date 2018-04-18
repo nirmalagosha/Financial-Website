@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{%extends 'index.html' %}
+
+                     {%block body%}
+<div class="table-responsive">
+    <h2 color="red">{{tit.upper()}}</h2>
+{% for x in show1%}
+
+  <table class="table">
+      
+      <tr><td>{{x[0]}}</td> <td> {{x[1]}}</td> <td> {{x[2]}}</td> <td> {{x[3]}}</td><td> {{x[4]}}</td></tr></table>
+{%endfor%}
+    
+</div>
+<br>
+<br><br>
+<h4>Loss</h4>
+<img src="{{ url_for('static', filename='') }}{{ loss }}" class="img-circle" width="450" height="150" alt="loss">
+
+<br>
+<br><br>
+<h4>Profit</h4>
+<img src="{{ url_for('static', filename='') }}{{ profit }}" class="img-circle" width="450" height="150" alt="profit">
+
+<br>
+<br><br>
+<h4>Max</h4>
+<img src="{{ url_for('static', filename='') }}{{ max1 }}" class="img-circle" width="450" height="150" alt="max">
+<br><br><br>
+
+
+
+
+                      {%endblock%}
+
+                 
